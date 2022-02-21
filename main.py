@@ -86,8 +86,8 @@ def login():
                         print("Hi, ",username)
                     else:
                         print("Incorrect Password\n")
-                        print("Enter 1 for Relogin")
-                        print("Enter 2 for Forgot Password")
+                        print("Please Relogin")
+                        print("Enter Forgot Password")
                         option = int(input("Enter Your Option: "))
                         if option == 1:
                             login()
@@ -101,8 +101,8 @@ def login():
                 print("Incorrect Username")
         except:
             print("Username Does Not Exist")
-            print("Enter 1 for Register")
-            print("Enter 2 for Relogin")
+            print(" Register")
+            print("Please Relogin")
             option = int(input("Enter Your Option: "))
             if option == 1:
                 registration()
@@ -114,9 +114,9 @@ def login():
         print("Enter a Value")
 
 def home(option=None):
-    print("Enter 1 for Login")
-    print("Enter 2 for Signup")
-    print("Enter 3 for Forgot Password")
+    print("Enter Login")
+    print("please Signup")
+    print("Enter Forgot Password")
     print("\n")
     option = int(input("Enter Your Option: "))
     if option == 1:
